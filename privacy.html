@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedVision — Privacy Policy</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --surface: #262626;
+            --surface-light: #363636;
+            --text-primary: #F5F5F5;
+            --text-secondary: #A8A8A8;
+            --accent: #0095F6;
+            --border: #363636;
+            --radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .app-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, var(--accent), #833AB4, #FD1D1D, #F77737);
+            border-radius: 16px;
+            margin: 0 auto 20px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 6px;
+        }
+
+        header p.subtitle {
+            font-size: 15px;
+            color: var(--text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 16px;
+            font-size: 14px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .effective-date {
+            display: inline-block;
+            margin-top: 16px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            background-color: var(--surface);
+            padding: 6px 14px;
+            border-radius: 20px;
+        }
+
+        section {
+            margin-bottom: 36px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: var(--text-primary);
+            letter-spacing: -0.3px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+
+        p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 12px;
+        }
+
+        ul li {
+            font-size: 15px;
+            color: var(--text-secondary);
+            padding: 6px 0 6px 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 6px;
+            height: 6px;
+            background-color: var(--accent);
+            border-radius: 50%;
+        }
+
+        .card {
+            background-color: var(--surface);
+            border-radius: var(--radius);
+            padding: 20px 24px;
+            margin-bottom: 16px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .highlight {
+            background-color: var(--surface);
+            border-left: 3px solid var(--accent);
+            padding: 16px 20px;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            margin-bottom: 16px;
+        }
+
+        .highlight p {
+            margin-bottom: 0;
+            color: var(--text-primary);
+            font-size: 14px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            color: var(--text-primary);
+            font-weight: 600;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+            margin-top: 48px;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .badge {
+            display: inline-block;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-green {
+            background-color: rgba(52, 199, 89, 0.15);
+            color: #34C759;
+        }
+
+        .badge-blue {
+            background-color: rgba(0, 149, 246, 0.15);
+            color: var(--accent);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 32px 16px 60px;
+            }
+
+            header h1 {
+                font-size: 24px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            table {
+                font-size: 13px;
+            }
+
+            th, td {
+                padding: 10px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon"></div>
+            <h1>FeedVision Privacy Policy</h1>
+            <p class="subtitle">by <a href="https://lifeforge.co">Lifeforge</a></p>
+            <br>
+            <a href="index.html" class="back-link">&larr; Back to Home</a>
+            <br>
+            <span class="effective-date">Effective Date: February 19, 2026</span>
+        </header>
+
+        <!-- Overview -->
+        <section>
+            <h2>Overview</h2>
+            <p>
+                FeedVision is an Instagram feed planner for iOS that helps you visualize and organize your
+                Instagram grid before posting. We are committed to protecting your privacy. This policy
+                explains what data FeedVision accesses, how it is stored, and your rights regarding that data.
+            </p>
+            <div class="highlight">
+                <p>
+                    <strong>The short version:</strong> FeedVision processes all data locally on your device.
+                    We do not collect, transmit, or store your personal data on any external server.
+                    No analytics. No tracking. No ads.
+                </p>
+            </div>
+        </section>
+
+        <!-- Information We Access -->
+        <section>
+            <h2>1. Information We Access</h2>
+            <p>When you connect your Instagram account, FeedVision accesses the following through Instagram's official APIs:</p>
+
+            <div class="card">
+                <h3>Instagram Account Data</h3>
+                <ul>
+                    <li>Your Instagram username, display name, biography, and profile picture</li>
+                    <li>Your follower count, following count, and post count</li>
+                    <li>Your published Instagram posts and their associated images</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Public Business &amp; Creator Profiles</h3>
+                <ul>
+                    <li>Publicly available profile information from business and creator accounts via Instagram's Business Discovery API</li>
+                    <li>Only data that is already publicly visible on Instagram is accessed</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- How We Access Your Data -->
+        <section>
+            <h2>2. How We Access Your Data</h2>
+            <p>
+                FeedVision connects to Instagram using <strong>OAuth 2.0</strong> via the
+                <strong>Instagram Graph API</strong>. This is the official, secure authentication method
+                provided by Meta. You authorize the connection directly through Instagram's login flow
+                — FeedVision never sees or stores your Instagram password.
+            </p>
+        </section>
+
+        <!-- How Data Is Stored -->
+        <section>
+            <h2>3. How Data Is Stored</h2>
+            <p>All data remains on your device. Nothing is sent to Lifeforge or any third-party server.</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Storage Method</th>
+                        <th>Location</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Instagram access token</td>
+                        <td>iOS Keychain <span class="badge badge-green">Encrypted</span></td>
+                        <td>On device</td>
+                    </tr>
+                    <tr>
+                        <td>Account profile info</td>
+                        <td>SwiftData (local database)</td>
+                        <td>On device</td>
+                    </tr>
+                    <tr>
+                        <td>Instagram photos</td>
+                        <td>Local image cache</td>
+                        <td>On device</td>
+                    </tr>
+                    <tr>
+                        <td>Planned posts &amp; grid layout</td>
+                        <td>SwiftData (local database)</td>
+                        <td>On device</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight">
+                <p>
+                    <strong>Keychain Security:</strong> Your Instagram access token is stored in the iOS Keychain,
+                    which uses hardware-backed encryption provided by the Secure Enclave on your device.
+                </p>
+            </div>
+        </section>
+
+        <!-- What We Do NOT Do -->
+        <section>
+            <h2>4. What We Do Not Do</h2>
+            <ul>
+                <li>We do <strong>not</strong> send your data to any third-party servers</li>
+                <li>We do <strong>not</strong> use analytics, tracking, or telemetry of any kind</li>
+                <li>We do <strong>not</strong> display advertisements</li>
+                <li>We do <strong>not</strong> sell, share, or rent your personal information</li>
+                <li>We do <strong>not</strong> store your Instagram password</li>
+                <li>We do <strong>not</strong> post to Instagram on your behalf without explicit action</li>
+                <li>We do <strong>not</strong> collect device identifiers, IP addresses, or location data</li>
+            </ul>
+        </section>
+
+        <!-- Third-Party Services -->
+        <section>
+            <h2>5. Third-Party Services</h2>
+            <p>
+                FeedVision communicates only with Instagram's official APIs (operated by Meta Platforms, Inc.)
+                to retrieve your account data and photos. No other third-party services are used.
+            </p>
+            <p>
+                Your use of Instagram is subject to
+                <a href="https://help.instagram.com/581066165581870" target="_blank" rel="noopener">Instagram's Terms of Use</a>
+                and
+                <a href="https://help.instagram.com/155833707900388" target="_blank" rel="noopener">Instagram's Privacy Policy</a>.
+            </p>
+        </section>
+
+        <!-- Data Retention & Deletion -->
+        <section>
+            <h2>6. Data Retention &amp; Deletion</h2>
+            <p>
+                Since all data is stored locally on your device, you have full control over it at all times.
+            </p>
+            <div class="card">
+                <h3>To delete your data:</h3>
+                <ul>
+                    <li><strong>Sign out</strong> within FeedVision to remove your access token and cached data</li>
+                    <li><strong>Delete the app</strong> from your device to remove all stored data, including the local database and image cache</li>
+                    <li><strong>Revoke access</strong> in your Instagram settings under <em>Settings &gt; Security &gt; Apps and Websites</em> to disconnect FeedVision from your account</li>
+                </ul>
+            </div>
+            <p>
+                Because no data is stored on our servers, there is no server-side data to request deletion of.
+            </p>
+        </section>
+
+        <!-- GDPR -->
+        <section>
+            <h2>7. Your Rights Under GDPR</h2>
+            <p>
+                If you are located in the European Economic Area (EEA), you have certain rights under the
+                General Data Protection Regulation (GDPR). Because FeedVision stores all data locally on your
+                device and does not transmit personal data to any server, most GDPR provisions are inherently
+                satisfied by our architecture. Nonetheless, we recognize the following rights:
+            </p>
+            <ul>
+                <li><strong>Right of Access</strong> — All your data is on your device and accessible to you at any time.</li>
+                <li><strong>Right to Rectification</strong> — You can update your data by re-syncing with Instagram or editing planned posts.</li>
+                <li><strong>Right to Erasure</strong> — Delete the app or sign out to erase all data. No server-side data exists to erase.</li>
+                <li><strong>Right to Data Portability</strong> — Your data lives on your device in standard formats.</li>
+                <li><strong>Right to Restrict Processing</strong> — You may revoke Instagram access or delete the app at any time.</li>
+                <li><strong>Right to Object</strong> — No automated profiling or marketing processing occurs.</li>
+            </ul>
+            <p>
+                <strong>Legal Basis for Processing:</strong> FeedVision processes data based on your explicit
+                consent, granted when you authenticate your Instagram account through the OAuth flow.
+                You may withdraw consent at any time by signing out or revoking access.
+            </p>
+            <p>
+                <strong>Data Controller:</strong> Lifeforge (<a href="https://lifeforge.co">lifeforge.co</a>).
+                For GDPR-related inquiries, contact us at <a href="mailto:support@lifeforge.co">support@lifeforge.co</a>.
+            </p>
+        </section>
+
+        <!-- CCPA -->
+        <section>
+            <h2>8. Your Rights Under CCPA</h2>
+            <p>
+                If you are a California resident, the California Consumer Privacy Act (CCPA) provides you with
+                specific rights regarding your personal information.
+            </p>
+            <ul>
+                <li><strong>Right to Know</strong> — FeedVision accesses Instagram profile data and photos as described in Section 1. All data remains on your device.</li>
+                <li><strong>Right to Delete</strong> — Delete the app to remove all data. No data exists on our servers.</li>
+                <li><strong>Right to Opt-Out of Sale</strong> — We do not sell your personal information. Ever.</li>
+                <li><strong>Right to Non-Discrimination</strong> — You will not receive different service for exercising your privacy rights.</li>
+            </ul>
+            <p>
+                <strong>Categories of personal information collected:</strong> Instagram account identifiers
+                and media content, stored locally on your device only.
+            </p>
+            <p>
+                <strong>Categories of personal information sold or disclosed for business purposes:</strong> None.
+            </p>
+        </section>
+
+        <!-- Children's Privacy -->
+        <section>
+            <h2>9. Children's Privacy</h2>
+            <p>
+                FeedVision is not directed at children under the age of 13 (or the applicable minimum age in
+                your jurisdiction). We do not knowingly collect personal information from children. Use of
+                FeedVision requires an Instagram account, which itself requires users to meet minimum age requirements.
+            </p>
+        </section>
+
+        <!-- Security -->
+        <section>
+            <h2>10. Security</h2>
+            <p>
+                We take reasonable measures to protect data processed by FeedVision:
+            </p>
+            <ul>
+                <li>Authentication tokens are stored in the iOS Keychain, protected by hardware encryption</li>
+                <li>All communication with Instagram's API is conducted over HTTPS (TLS encryption)</li>
+                <li>No data is transmitted to or stored on external servers, eliminating network-based attack vectors</li>
+                <li>The app leverages iOS platform security, including App Sandbox and Data Protection</li>
+            </ul>
+        </section>
+
+        <!-- Changes to This Policy -->
+        <section>
+            <h2>11. Changes to This Policy</h2>
+            <p>
+                We may update this Privacy Policy from time to time. If we make material changes, we will
+                update the "Effective Date" at the top of this page and, where appropriate, notify you through
+                the app. We encourage you to review this policy periodically.
+            </p>
+        </section>
+
+        <!-- Contact -->
+        <section>
+            <h2>12. Contact Us</h2>
+            <p>
+                If you have any questions, concerns, or requests regarding this Privacy Policy or your data,
+                please contact us:
+            </p>
+            <div class="card">
+                <p><strong>Lifeforge</strong></p>
+                <p>Email: <a href="mailto:support@lifeforge.co">support@lifeforge.co</a></p>
+                <p>Web: <a href="https://lifeforge.co" target="_blank" rel="noopener">lifeforge.co</a></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Lifeforge. All rights reserved.</p>
+            <p style="margin-top: 8px;">FeedVision is not affiliated with, endorsed by, or sponsored by Instagram or Meta Platforms, Inc.</p>
+        </footer>
+    </div>
+</body>
+</html>

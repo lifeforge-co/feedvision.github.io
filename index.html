@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FeedVision — Plan Your Instagram Grid</title>
+    <style>
+        :root {
+            --bg: #000000;
+            --surface: #262626;
+            --surface-light: #363636;
+            --text-primary: #F5F5F5;
+            --text-secondary: #A8A8A8;
+            --accent: #0095F6;
+            --border: #363636;
+            --radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-primary);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 24px 80px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .app-icon {
+            width: 96px;
+            height: 96px;
+            background: linear-gradient(135deg, var(--accent), #833AB4, #FD1D1D, #F77737);
+            border-radius: 22px;
+            margin: 0 auto 24px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+        }
+
+        header p.subtitle {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 480px;
+            margin: 0 auto;
+        }
+
+        .features {
+            display: grid;
+            gap: 16px;
+            margin-bottom: 48px;
+        }
+
+        .feature-card {
+            background-color: var(--surface);
+            border-radius: var(--radius);
+            padding: 24px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .feature-icon {
+            font-size: 28px;
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            background-color: var(--surface-light);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .feature-card h3 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .feature-card p {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .links-section {
+            margin-bottom: 48px;
+        }
+
+        .links-section h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            letter-spacing: -0.3px;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--surface);
+            border-radius: var(--radius);
+            padding: 18px 24px;
+            margin-bottom: 8px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: background-color 0.2s ease;
+        }
+
+        .link-card:hover {
+            background-color: var(--surface-light);
+        }
+
+        .link-card span {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .link-card .arrow {
+            color: var(--text-secondary);
+            font-size: 18px;
+        }
+
+        .contact-section {
+            text-align: center;
+            padding: 32px;
+            background-color: var(--surface);
+            border-radius: var(--radius);
+            margin-bottom: 48px;
+        }
+
+        .contact-section h2 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .contact-section p {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .contact-section a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact-section a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+        }
+
+        footer p {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 32px 16px 60px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            header p.subtitle {
+                font-size: 16px;
+            }
+
+            .feature-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="app-icon"></div>
+            <h1>FeedVision</h1>
+            <p class="subtitle">Plan and preview your Instagram grid before you post. Visualize your feed, rearrange photos, and keep your aesthetic consistent.</p>
+        </header>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📐</div>
+                <div>
+                    <h3>Grid Preview</h3>
+                    <p>See exactly how your Instagram profile grid will look before posting anything.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔀</div>
+                <div>
+                    <h3>Drag & Drop</h3>
+                    <p>Rearrange planned posts with long press drag and drop to find the perfect layout.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">✂️</div>
+                <div>
+                    <h3>Crop Editor</h3>
+                    <p>Adjust how each photo is cropped in the 1:1 square grid — control the vertical offset for the best preview.</p>
+                </div>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <div>
+                    <h3>Privacy First</h3>
+                    <p>All data stays on your device. No tracking, no analytics, no ads. Your feed, your business.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="links-section">
+            <h2>Legal</h2>
+            <a href="privacy.html" class="link-card">
+                <span>Privacy Policy</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="terms.html" class="link-card">
+                <span>Terms of Use</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <div class="contact-section">
+            <h2>Support</h2>
+            <p>Have questions or need help?</p>
+            <p><a href="mailto:support@lifeforge.co">support@lifeforge.co</a></p>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 <a href="https://lifeforge.co">Lifeforge</a>. All rights reserved.</p>
+            <p style="margin-top: 8px;">FeedVision is not affiliated with, endorsed by, or sponsored by Instagram or Meta Platforms, Inc.</p>
+        </footer>
+    </div>
+</body>
+</html>
